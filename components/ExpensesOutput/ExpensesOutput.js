@@ -4,8 +4,8 @@ import ExpensesSummary from "./ExpensesSummary";
 import ExpensesList from "./ExpensesList";
 
 /** Custom imports */
-import { dummy } from "../data/dummy";
-import { GlobalStyles } from "../constants/styles";
+import { dummy } from "../../data/dummy";
+import { GlobalStyles } from "../../constants/styles";
 
 /** Constants Initialization */
 const DUMMY = dummy;
