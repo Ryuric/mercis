@@ -1,20 +1,16 @@
 /** Libraries imports*/
 import { View, StyleSheet } from "react-native";
-import ExpensesSummary from "./ExpensesSummary";
-import ExpensesList from "./ExpensesList";
 
 /** Custom imports */
-import { dummy } from "../../data/dummy";
 import { GlobalStyles } from "../../constants/styles";
-
-/** Constants Initialization */
-const DUMMY = dummy;
+import ExpensesSummary from "./ExpensesSummary";
+import ExpensesList from "./ExpensesList";
 
 function ExpensesOutput({ expenses, expensesPeriod }) {
   return (
     <View style={styles.container}>
-      <ExpensesSummary expenses={DUMMY} periodName={expensesPeriod} />
-      <ExpensesList expenses={DUMMY} />
+      <ExpensesSummary expenses={expenses} periodName={expensesPeriod} />
+      <ExpensesList expenses={expenses} />
     </View>
   );
 }
